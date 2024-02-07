@@ -1,6 +1,8 @@
 import { Icon } from "@iconify/react";
 
-export const technologieDefine = (tech: string): JSX.Element => {
+import { technologie } from "../types/techType";
+
+export const technologieDefine = (tech: technologie): JSX.Element => {
    switch (tech) {
       case "html":
          return <Icon icon="vscode-icons:file-type-html" width="70" height="70" />;
@@ -26,7 +28,8 @@ export const technologieDefine = (tech: string): JSX.Element => {
          return <Icon icon="logos:figma" width="70" height="70" />;
       case "mongodb":
          return <Icon icon="devicon:mongodb" width="70" height="70" />;
-
+      case "rtk":
+         return <Icon icon="devicon:redux" width="70" height="70" />;
       default:
          return <Icon icon="vscode-icons:file-type-html" width="70" height="70" />;
    }

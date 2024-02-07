@@ -17,7 +17,7 @@ export const Projects: React.FC = () => {
                <ProjectCard
                   title="1st project"
                   description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos animi, nostrum distinctio expedita adipisci, a fuga architecto reiciendis vel iste quibusdam quam voluptatum! Ea eos doloribus, debitis reiciendis soluta et?"
-                  techStack={["html", "css", "js", "js", "js"]}
+                  techStack={["html", "css", "javascript", "sass", "figma"]}
                   image={projectImage}
                />
             </ProjectsContent>

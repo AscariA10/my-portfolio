@@ -1,14 +1,19 @@
+import { technologieDefine } from "../../../helpers/technologieDefine";
+
+import { technologie } from "../../../types/techType";
+
 import { Section } from "../../common/section/Section";
 import { Container } from "../../common/container/Container";
 import { SectionTitle } from "../../common/sectionTitle/SectionTitle";
 
-import { technologieDefine } from "../../../helpers/technologieDefine";
+import { TechnologieList } from "./TechStack.styled";
 
 export const TechStack: React.FC = () => {
-   const myTechStack = [
+   const myTechStack: Array<technologie> = [
       "html",
       "css",
       "react",
+      "rtk",
       "javascript",
       "typescript",
       "vite",
@@ -23,11 +28,11 @@ export const TechStack: React.FC = () => {
       <Section>
          <Container>
             <SectionTitle title="Technologie Stack" />
-            <ul>
+            <TechnologieList>
                {myTechStack.map(tech => (
                   <li key={tech}>{technologieDefine(tech)}</li>
                ))}
-            </ul>
+            </TechnologieList>
          </Container>
       </Section>
    );

@@ -1,4 +1,5 @@
 import { Iheight, Iwidth } from "./style-int";
+import { technologie } from "../types/techType";
 
 export interface IChildrenProp {
    children: React.ReactNode;
@@ -22,7 +23,7 @@ export interface IcardProps {
    title: string;
    description: string;
    image: string;
-   techStack: string[];
+   techStack: Array<technologie>;
 }
 
 // export interface IsectionTitle {

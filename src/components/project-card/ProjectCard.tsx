@@ -1,6 +1,10 @@
+import { Icon } from "@iconify/react";
+
 import { IcardProps } from "../../interfaces/component-int";
-// import { Icon } from "@iconify/react";
+
 import { technologieDefine } from "../../helpers/technologieDefine";
+
+import { technologie } from "../../types/techType";
 
 import {
    CardWrapper,
@@ -11,30 +15,17 @@ import {
    StackList,
    StackItem,
    StackDescription,
+   TechTitle,
+   Link,
+   LinkDescription,
 } from "./ProjectCard.styled";
 
 export const ProjectCard: React.FC<IcardProps> = ({
    image,
    title,
    description,
-   techStack = ["html", "css", "js"],
+   techStack,
 }: IcardProps) => {
-   // const technologieDefine = (tech: string): JSX.Element => {
-   //    switch (tech) {
-   //       case "html":
-   //          return <Icon icon="vscode-icons:file-type-html" width="70" height="70" />;
-   //          break;
-   //       case "css":
-   //          return <Icon icon="vscode-icons:file-type-css" width="70" height="70" />;
-   //          break;
-   //       case "js":
-   //          return <Icon icon="vscode-icons:file-type-js-official" width="70" height="70" />;
-   //          break;
-   //       default:
-   //          return <Icon icon="vscode-icons:file-type-html" width="70" height="70" />;
-   //    }
-   // };
-
    return (
       <CardWrapper>
          <Thumb>
@@ -43,17 +34,23 @@ export const ProjectCard: React.FC<IcardProps> = ({
          <CardTitle>{title}</CardTitle>
          <Description>{description}</Description>
          <StackList>
-            {techStack.map(technologie => (
-               <StackItem key={technologie}>
+            {techStack.map((tech: technologie) => (
+               <StackItem key={tech}>
                   <StackDescription>
-                     {technologieDefine(technologie)}
-                     <p>{technologie}</p>
+                     {technologieDefine(tech)}
+                     <TechTitle>{tech}</TechTitle>
                   </StackDescription>
                </StackItem>
             ))}
          </StackList>
-         <a>github</a>
-         <a>live page</a>
+         <Link>
+            <Icon icon="devicon:github" width="32" height="32" />
+            <LinkDescription>github</LinkDescription>
+         </Link>
+         <Link>
+            <Icon icon="devicon:chrome" width="32" height="32" />
+            <LinkDescription>live page</LinkDescription>
+         </Link>
       </CardWrapper>
    );
 };

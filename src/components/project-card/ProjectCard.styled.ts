@@ -51,3 +51,22 @@ export const StackDescription = styled.div`
 
    flex-direction: column;
 `;
+
+export const TechTitle = styled.p`
+   display: block;
+   margin-top: 12px;
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: 500;
+`;
+
+export const Link = styled.a`
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 6px;
+`;
+
+export const LinkDescription = styled.p`
+   margin-left: 12px;
+`;
