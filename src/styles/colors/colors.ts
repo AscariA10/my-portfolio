@@ -3,6 +3,8 @@ export const COLORS: { [key: string]: string } = {
    ACCENT_DARK: "rgb(25,25,112)",
    BUTTON_BACK_LIGHT: "rgb(250, 249, 246)",
    BUTTON_FONT_DARK: "rgb(250, 249, 246)",
+   FOOTER_BACKGROUND: "rgb(54, 69, 79)",
+   FOOTER_FONT_COLOR: "rgb(250, 249, 246)",
 };
 
 Object.freeze(COLORS);
