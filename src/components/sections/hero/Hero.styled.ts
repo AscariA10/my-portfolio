@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { COLORS } from "../../../styles/colors/colors";
+import { COLORS } from "../../../styles/colors";
 
 export const Name = styled.h1`
    margin-bottom: 36px;

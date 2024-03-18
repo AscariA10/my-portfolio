@@ -4,6 +4,7 @@ import { TechStack } from "./components/sections/tech-stack/TechStack";
 import { Projects } from "./components/sections/projects/Projects";
 import { MyContacts } from "./components/sections/my-contacts/MyContacts";
 import { Footer } from "./components/footer/Footer";
+import { MobileMenu } from "./components/mobile-menu/MobileMenu";
 
 function App() {
    return (
@@ -14,6 +15,7 @@ function App() {
          <Projects />
          <MyContacts />
          <Footer />
+         <MobileMenu />
       </>
    );
 }
