@@ -16,6 +16,7 @@ import {
    StackItem,
    StackDescription,
    TechTitle,
+   LinkList,
    Link,
    LinkDescription,
 } from "./ProjectCard.styled";
@@ -43,14 +44,20 @@ export const ProjectCard: React.FC<IcardProps> = ({
                </StackItem>
             ))}
          </StackList>
-         <Link>
-            <Icon icon="devicon:github" width="32" height="32" />
-            <LinkDescription>github</LinkDescription>
-         </Link>
-         <Link>
-            <Icon icon="devicon:chrome" width="32" height="32" />
-            <LinkDescription>live page</LinkDescription>
-         </Link>
+         <LinkList>
+            <li>
+               <Link>
+                  <Icon icon="devicon:github" width="28" height="28" />
+                  <LinkDescription>github</LinkDescription>
+               </Link>
+            </li>
+            <li>
+               <Link>
+                  <Icon icon="devicon:chrome" width="28" height="28" />
+                  <LinkDescription>live page</LinkDescription>
+               </Link>
+            </li>
+         </LinkList>
       </CardWrapper>
    );
 };

@@ -39,6 +39,8 @@ export const StackList = styled.ul`
    flex-wrap: wrap;
    gap: 16px;
    width: 100%;
+
+   margin-bottom: 20px;
 `;
 
 export const StackItem = styled.li`
@@ -60,6 +62,12 @@ export const TechTitle = styled.p`
    font-weight: 500;
 `;
 
+export const LinkList = styled.ul`
+   display: flex;
+   width: 80%;
+   justify-content: space-between;
+`;
+
 export const Link = styled.a`
    display: flex;
    align-items: center;
@@ -69,4 +77,5 @@ export const Link = styled.a`
 
 export const LinkDescription = styled.p`
    margin-left: 12px;
+   font-size: 16px;
 `;
