@@ -1,13 +1,19 @@
 import styled from "@emotion/styled";
-// import { COLORS } from "../../styles/colors";
+import { COLORS } from "../../styles/colors";
 
 export const Wrapper = styled.div`
-   margin-left: auto;
-   margin-right: auto;
-   height: 90vh;
-   width: 80vh;
+   position: absolute;
 
-   border: 1px dashed red;
+   top: 0;
+   left: 0;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   height: 95%;
+   width: 90%;
+
+   background-color: ${COLORS.MENU_BACK_LIGHT};
 `;
 
 export const CloseWrapper = styled.p`

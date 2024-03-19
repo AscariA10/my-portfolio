@@ -1,3 +1,5 @@
+import { IRefProps } from "../../../interfaces/component-int";
+
 import { Icon } from "@iconify/react";
 
 import { Section } from "../../common/section/Section";
@@ -11,11 +13,11 @@ import {
    ContactDescription,
 } from "./MyContacts.styled";
 
-export const MyContacts: React.FC = () => {
+export const MyContacts: React.FC<IRefProps> = ({ refProp }) => {
    return (
       <Section>
          <Container>
-            <MyContactsContent>
+            <MyContactsContent ref={refProp}>
                <SectionTitle title="my contacts" />
                <ContactsList>
                   <li>

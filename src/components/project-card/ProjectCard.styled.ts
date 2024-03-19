@@ -12,12 +12,13 @@ export const CardWrapper = styled.div`
 
 export const Thumb = styled.div`
    width: 100%;
-   height: 374px;
+   height: 300px;
+   overflow-y: scroll;
 `;
 
 export const Image = styled.img`
    display: block;
-   height: 100%;
+
    width: 100%;
    object-fit: cover;
 `;
@@ -25,7 +26,6 @@ export const Image = styled.img`
 export const CardTitle = styled.h3`
    font-size: 30px;
    font-weight: 900;
-   text-transform: lowercase;
 `;
 
 export const Description = styled.p`

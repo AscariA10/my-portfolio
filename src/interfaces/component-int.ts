@@ -5,6 +5,19 @@ export interface IChildrenProp {
    children: React.ReactNode;
 }
 
+export interface IRefProps {
+   refProp: any;
+}
+
+export interface IHeaderProps {
+   openModal: () => void;
+}
+
+export interface IModalProps {
+   closeModal: () => void;
+   executeScroll: (elementId: string) => void;
+}
+
 export interface Ititle {
    title: string;
 }
@@ -24,6 +37,8 @@ export interface IcardProps {
    description: string;
    image: string;
    techStack: Array<technologie>;
+   githubLink: string;
+   livePage: string;
 }
 
 // export interface IsectionTitle {

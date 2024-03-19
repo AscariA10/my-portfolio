@@ -26,6 +26,8 @@ export const ProjectCard: React.FC<IcardProps> = ({
    title,
    description,
    techStack,
+   githubLink,
+   livePage,
 }: IcardProps) => {
    return (
       <CardWrapper>
@@ -46,13 +48,13 @@ export const ProjectCard: React.FC<IcardProps> = ({
          </StackList>
          <LinkList>
             <li>
-               <Link>
+               <Link href={githubLink} target="_blank">
                   <Icon icon="devicon:github" width="28" height="28" />
                   <LinkDescription>github</LinkDescription>
                </Link>
             </li>
             <li>
-               <Link>
+               <Link href={livePage} target="_blank">
                   <Icon icon="devicon:chrome" width="28" height="28" />
                   <LinkDescription>live page</LinkDescription>
                </Link>

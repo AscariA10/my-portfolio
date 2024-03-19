@@ -5,6 +5,7 @@ export const COLORS: { [key: string]: string } = {
    BUTTON_FONT_DARK: "rgb(250, 249, 246)",
    FOOTER_BACKGROUND: "rgb(54, 69, 79)",
    FOOTER_FONT_COLOR: "rgb(250, 249, 246)",
+   MENU_BACK_LIGHT: "rgb(250, 249, 246)",
 };
 
 Object.freeze(COLORS);

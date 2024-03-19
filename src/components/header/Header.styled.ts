@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 import { COLORS } from "../../styles/colors";
 
 export const MainHeader = styled.header`
+   position: relative;
+
    padding-top: 36px;
    padding-bottom: 36px;
 `;
