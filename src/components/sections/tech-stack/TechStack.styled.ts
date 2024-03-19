@@ -9,4 +9,7 @@ export const TechnologieList = styled.ul`
    gap: 24px;
 
    padding: 24px;
+   @media screen and (min-width: 1024px) {
+      padding: 40px;
+   }
 `;

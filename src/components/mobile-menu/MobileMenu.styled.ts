@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
    left: 50%;
    transform: translate(-50%, -50%);
 
+   min-height: 370px;
    height: 95%;
    width: 90%;
 

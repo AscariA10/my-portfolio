@@ -15,9 +15,9 @@ export const Wrapper = styled.div`
       padding-left: 30px;
       padding-right: 30px;
    }
-   @media screen and (min-width: 1280px) {
-      width: 1280px;
-      padding-left: 20px;
-      padding-right: 20px;
+   @media screen and (min-width: 1024px) {
+      width: 1024px;
+      padding-left: 40px;
+      padding-right: 40px;
    }
 `;

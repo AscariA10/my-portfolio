@@ -3,6 +3,10 @@ import styled from "@emotion/styled";
 export const Wrapper = styled.section`
    padding-top: 36px;
    padding-bottom: 36px;
+   @media screen and (min-width: 1024px) {
+      padding-top: 42px;
+      padding-bottom: 42px;
+   }
 `;
 // @media screen and (min-width: 768px) {
 //    padding-top: 50px;

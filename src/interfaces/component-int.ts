@@ -9,8 +9,13 @@ export interface IRefProps {
    refProp: any;
 }
 
+export interface IHeroProps extends IRefProps {
+   executeScroll: (elementId: string) => void;
+}
+
 export interface IHeaderProps {
    openModal: () => void;
+   executeScroll: (elementId: string) => void;
 }
 
 export interface IModalProps {
@@ -25,6 +30,7 @@ export interface Ititle {
 export interface Ibutton {
    title: string;
    colorTheme: string;
+   executeScroll: (event: any) => void;
 }
 
 export interface IsizeProps extends IChildrenProp {
@@ -33,6 +39,7 @@ export interface IsizeProps extends IChildrenProp {
 }
 
 export interface IcardProps {
+   orderNumber?: any;
    title: string;
    description: string;
    image: string;

@@ -21,4 +21,8 @@ export const ButtonElement = styled.button<TOptions>`
       props.colorTheme === "light" ? COLORS.BUTTON_BACK_LIGHT : COLORS.ACCENT};
    border: 2px solid ${COLORS.ACCENT};
    border-radius: 25px;
+
+   &:hover {
+      cursor: pointer;
+   }
 `;

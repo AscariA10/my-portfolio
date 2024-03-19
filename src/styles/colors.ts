@@ -6,6 +6,8 @@ export const COLORS: { [key: string]: string } = {
    FOOTER_BACKGROUND: "rgb(54, 69, 79)",
    FOOTER_FONT_COLOR: "rgb(250, 249, 246)",
    MENU_BACK_LIGHT: "rgb(250, 249, 246)",
+   CARD_BACK_DARK: "rgb(250, 249, 246)",
+   CARD_BACK_LIGHT: "rgb(255, 255, 255)",
 };
 
 Object.freeze(COLORS);

@@ -4,6 +4,7 @@ import filmoteka from "../public/filmoteka.png";
 import phonebook from "../public/phonebook.png";
 import taskPro from "../public/task-pro.png";
 import dokoopy from "../public/dokoopy.png";
+import simpleToDo from "../public/simple-todo.png";
 
 import { IcardProps } from "./interfaces/component-int";
 
@@ -27,6 +28,15 @@ export const PROJECTS_DATA: Array<IcardProps> = [
       image: dokoopy,
       githubLink: "https://github.com/AscariA10/dokoopy57",
       livePage: "https://dokoopy57.vercel.app/",
+   },
+   {
+      title: "To-Do List",
+      description:
+         "Simple todo list, with minimal styles, but with rtk and typescript. At this project added adaptive styles for mobile, tablet and desktop. Also added minimal interactive behavior ",
+      techStack: ["html", "css", "typescript", "react", "vite"],
+      image: simpleToDo,
+      githubLink: "https://github.com/AscariA10/todo-list",
+      livePage: "https://todo-list-ascaria10.vercel.app/",
    },
    {
       title: "Task-Pro",

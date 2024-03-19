@@ -52,8 +52,8 @@ function App() {
 
    return (
       <>
-         <Header openModal={openModalHandler} />
-         <Hero refProp={aboutRef} />
+         <Header openModal={openModalHandler} executeScroll={executeScroll} />
+         <Hero refProp={aboutRef} executeScroll={executeScroll} />
          <TechStack />
          <Projects refProp={projectRef} />
          <MyContacts refProp={contactsRef} />

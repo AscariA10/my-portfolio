@@ -22,6 +22,7 @@ import {
 } from "./ProjectCard.styled";
 
 export const ProjectCard: React.FC<IcardProps> = ({
+   orderNumber,
    image,
    title,
    description,
@@ -30,7 +31,7 @@ export const ProjectCard: React.FC<IcardProps> = ({
    livePage,
 }: IcardProps) => {
    return (
-      <CardWrapper>
+      <CardWrapper order={orderNumber}>
          <Thumb>
             <Image src={image} />
          </Thumb>

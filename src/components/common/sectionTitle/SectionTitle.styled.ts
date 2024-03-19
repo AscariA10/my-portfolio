@@ -12,4 +12,13 @@ export const Title = styled.h2`
    text-transform: uppercase;
 
    border-bottom: 1px solid ${COLORS.ACCENT_DARK};
+
+   @media screen and (min-width: 744px) {
+      font-size: 40px;
+   }
+   @media screen and (min-width: 1024px) {
+      padding-bottom: 36px;
+      margin-bottom: 36px;
+      font-size: 44px;
+   }
 `;
